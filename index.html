@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>寻宝之旅</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div id="treasure-map">
+  <div class="step" id="library-step" style="display: none;">
+    <img src="images/library.png" alt="古老的图书馆">
+    <p>在古老的图书馆里找到了第一个线索...</p>
+  </div>
+  <div class="step" id="script-step" style="display: none;">
+    <img src="images/temple.png" alt="解码古老文字">
+    <p>解码成功!宝藏在一座古老的神庙中...</p>
+  </div>
+  <div class="step" id="temple-step" style="display: none;">
+    <img src="images/xz.png" alt="古老的神庙">
+    <p>找到了一个神秘的箱子...</p>
+  </div>
+  <div class="step" id="guard-step" style="display: none;">
+    <img src="images/guard.png" alt="神庙守卫">
+    <p>糟糕!遇到了神庙守卫!</p>
+  </div>
+  
+  <div class="step" id="treasure-step" style="display: none;">
+    <img src="images/treasure.png" alt="宝藏箱">
+    <p>恭喜!你找到了传说中的宝藏!</p>
+  </div>
+  <button id="start-treasure-hunt">开始寻宝</button>
+  <button id="next-step" style="display: none;">下一步</button>
+  <button id="restart" style="display: none;">重新开始</button>
+</div>
+<script src="script/treasure.js"></script>
+</body>
+</html>

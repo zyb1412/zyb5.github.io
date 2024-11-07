@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: #add8e6; /* 更改为浅蓝色背景 */
+}
+
+#treasure-map {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  display: none; /* 默认隐藏所有步骤 */
+  width: 100%; /* 使步骤宽度填满容器 */
+  max-width: 600px;
+  margin: 20px auto; /* 添加上下外边距，并确保左右居中 */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+  text-align: center; /* 确保文字居中 */
+}
+
+.step img {
+  width: 100%; /* 使图片宽度占满容器 */
+  height: auto; /* 高度自适应保持图片比例 */
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 10px auto; /* 添加上下外边距，并确保左右居中 */
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* 特殊步骤样式保持不变 */
+#guard-step {
+  width: 100%; /* 使步骤宽度填满容器 */
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+  text-align: center;
+}
